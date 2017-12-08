@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pushkar.seniordesign.BusinessDisplay">
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Name: "
+        android:textSize="@dimen/businessNameFontSize"/>
+
+    <TextView
+        android:id="@+id/businessNametextViewID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/textViewName"
+        android:layout_toRightOf="@+id/textViewName"
+        android:text="Pie Five"
+        android:textSize="@dimen/businessNameFontSize" />
+
+    <TextView
+        android:id="@+id/textViewAvgRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewName"
+        android:layout_marginTop="@dimen/spacingBetweentextViews"
+        android:text="Avg Rating: "
+        android:textSize="@dimen/businessNameFontSize"/>
+
+    <RatingBar
+        android:id="@+id/ratingBarID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewAvgRating"
+        android:layout_toEndOf="@+id/textViewAvgRating"
+        android:layout_toRightOf="@+id/textViewAvgRating"
+        android:numStars="5"
+        android:stepSize="0.5"/>
+
+    <TextView
+        android:id="@+id/textViewNumOfReviews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ratingBarID"
+        android:layout_marginTop="@dimen/spacingBetweentextViews"
+        android:text="Number Of Reviews: "
+        android:textSize="@dimen/businessNameFontSize"/>
+
+    <TextView
+        android:id="@+id/numberOfReviewsID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewNumOfReviews"
+        android:layout_toEndOf="@+id/textViewNumOfReviews"
+        android:layout_toRightOf="@+id/textViewNumOfReviews"
+        android:text="2017"
+        android:textSize="@dimen/businessNameFontSize" />
+
+    <TextView
+        android:id="@+id/textViewOpen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewNumOfReviews"
+        android:layout_marginTop="@dimen/spacingBetweentextViews"
+        android:textSize="@dimen/businessNameFontSize"
+        android:text="Open: " />
+
+    <TextView
+        android:id="@+id/openTextViewID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewOpen"
+        android:layout_toEndOf="@+id/textViewOpen"
+        android:layout_toRightOf="@+id/textViewOpen"
+        android:textSize="@dimen/businessNameFontSize"
+        android:text="10:00am-11:00pm" />
+
+    <TextView
+        android:id="@+id/textViewLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewOpen"
+        android:layout_marginTop="@dimen/spacingBetweentextViews"
+        android:textSize="@dimen/businessNameFontSize"
+        android:text="Location: " />
+
+    <TextView
+        android:id="@+id/locationTextViewID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewLocation"
+        android:layout_toEndOf="@+id/textViewLocation"
+        android:layout_toRightOf="@+id/textViewLocation"
+        android:textSize="@dimen/businessNameFontSize"
+        android:text="715 Border Pl" />
+
+    <TextView
+        android:id="@+id/textViewContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewLocation"
+        android:layout_marginTop="@dimen/spacingBetweentextViews"
+        android:textSize="@dimen/businessNameFontSize"
+        android:text="Contact: " />
+
+    <TextView
+        android:id="@+id/contactTextViewID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewContact"
+        android:layout_toEndOf="@+id/textViewContact"
+        android:layout_toRightOf="@+id/textViewContact"
+        android:textSize="@dimen/businessNameFontSize"
+        android:text="(123)456-7890" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textViewContact"
+        android:text="Reviews: "
+        android:textSize="@dimen/businessNameFontSize"
+        android:layout_marginTop="@dimen/spacingBetweentextViews"
+        android:id="@+id/textViewReviews"
+        />
+
+    <ListView
+        android:padding="@dimen/spacingBetweentextViews"
+        android:id="@+id/reviewsListViewID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewReviews"
+        android:divider="@android:color/background_dark"
+        android:dividerHeight="@dimen/dividerOfListViewHeight" />
+
+
+</RelativeLayout>
